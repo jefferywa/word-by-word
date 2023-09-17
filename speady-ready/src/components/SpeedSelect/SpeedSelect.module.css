@@ -1,0 +1,62 @@
+.SpeedSelect {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  padding-top: 0;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  position: relative;
+  z-index: 2;
+}
+
+.SpeedSelect__content {
+  display: grid;
+  
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 16px;
+  
+}
+
+.SpeedSelect__footer {
+  display: grid;
+  gap: 12px;
+}
+
+.CancelButton {
+  background-color: #ffffff1a;
+}
+
+.SpeedSelect__RadioGroup {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.SpeedSelect__RadioGroup label {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  padding: 22px;
+  border-radius: 16px;
+}
+
+.SpeedSelect__RadioGroup label:has(input:checked) {
+  background-color: var(--primary);
+}
+
+.SpeedSelect__RadioGroup label:has(input:checked) img {
+  filter: invert(1);
+}
+
+.SpeedSelect__RadioGroup label img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.LowSpeed {
+  transform: scaleX(-1);
+}

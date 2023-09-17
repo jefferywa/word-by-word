@@ -1,0 +1,52 @@
+.PlayerHead {
+  display: grid;
+  align-content: baseline;
+  gap: 8px;
+}
+
+.Actions {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.Actions button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Actions img {
+  transform-origin: center;
+  transform: rotate(90deg);
+  filter: invert(1);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.DetailsButton,
+.CloseButton {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  aspect-ratio: 1 / 1;
+}
+
+.CloseButton {
+  position: relative;
+}
+
+.CloseButton::after,
+.CloseButton::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.CloseButton::before {
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --primary: #2d2dee;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+#app {
+  height: 100svh;
+  background-color: #352f44;
+}
+
+.view {
+  max-width: 600px;
+  margin: auto;
+  height: 100%;
+  padding: 16px;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.settings {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.player-view {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.annotation {
+  text-align: center;
+  opacity: 0.7;
+}

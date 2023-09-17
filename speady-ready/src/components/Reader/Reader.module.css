@@ -1,0 +1,42 @@
+.Reader {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Reader__content svg {
+  display: none;
+}
+
+.Reader__content h1 {
+  display: block;
+}
+
+.Reader__content:global(.overflowing) {
+}
+
+.Reader__content:global(.overflowing) svg {
+  display: block;
+}
+
+.Reader__content:global(.overflowing) h1 {
+  display: none;
+}
+
+.Reader svg {
+  width: 100%;
+  text-align: center;
+}
+
+.Reader svg text {
+  fill: currentColor;
+  text-align: center;
+  font-family: inherit;
+}
+
+.Reader__word {
+  font-size: 3rem;
+  white-space: nowrap;
+  text-align: center;
+}

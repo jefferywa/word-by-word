@@ -1,0 +1,23 @@
+.Setup {
+  text-align: center;
+  grid-row: -1;
+}
+
+.Setup :is(h2) {
+  margin: 0;
+  padding: 0;
+}
+
+.Setup form {
+  display: grid;
+  gap: 16px;
+}
+
+.Setup textarea {
+  font-size: 1.2em;
+  min-height: 100px;
+  resize: vertical;
+  max-height: 300px;
+  border-radius: 8px;
+  padding: 8px;
+}

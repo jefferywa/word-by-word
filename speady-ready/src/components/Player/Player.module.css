@@ -1,0 +1,20 @@
+.Player {
+  background-color: black;
+  border-radius: 18px 18px 0 0;
+  height: calc(100svh - 24px);
+  padding: 12px;
+
+  display: grid;
+  grid-template-rows: max-content 1fr;
+}
+
+.Player__annotation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  pointer-events: none;
+  padding: 40px 0;
+}
